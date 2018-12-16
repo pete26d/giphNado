@@ -101,6 +101,9 @@ window.onload = function() {
     // add event listener to window so that it will pick up dynamically created buttons
     $(document).on("click", ".search-gif", renderGifs);
     $(document).on("click", ".gif-result", changeState);
+    $("#gif-clear").on("click", function() {
+        $("#display-gif").empty();
+    });
 
     
     // create inital list of buttons and gifs from hard-coded array
